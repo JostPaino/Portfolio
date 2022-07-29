@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hello Bulma!</title>
+		<link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+		<link rel="stylesheet" href="styles/helpers.css">
+		<link rel="stylesheet" href="styles/grid.css">
+		<link rel="stylesheet" href="styles/style.css">
+		<style>
+/*sticky*/
+.menu{
+  position: sticky;
+  display: inline-block;
+  vertical-align: top;
+  max-height: 100vh;
+  overflow-y: auto;
+  width: 200px;
+  top: 0;
+  bottom: 0;
+  padding: 30px;
+}
+
+.content {
+  display: inline-block;
+}
+
+/* background */	
+
+
+.center {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}	
+
+@media (max-width: 1024px) { .hero { background: white url(images/hero-2.jpg) center / cover; } }
+@media (max-width:  768px) { 
+  .menu{ display: none;} 
+  .card{margin-left: 2%;margin-right: 2%;}
+}
+@media (min-width:  768px) { 
+  .mobilemenu{ display: none;} 
+  .card {width: 20vw;}
+ 
+}
+ 
+
+/* responsive */
+@media (max-width: 768px) {
+	:root {
+		font-size: 90%;
+	}
+}
+		</style>
+	</head>
+	<body>
+        <div class="is-widescreen">
+            <div class="columns">
+                
+              <aside class="menu">
+                <h1 class="title">LOGO</h1>
+                <h1 class="subtitle center">Ux / Ui<br> Designer</h1>
+              
+                <ul class="menu-list">
+                  <li><a >About</a></li>
+                  <li><a >Contact</a></li>
+                  
+                  <li><a class="is-active">Projects</a></li>
+                  <li><a>Resume</a></li>
+                </ul>
+            
+              </aside>
+
+              <nav class="navbar mobilemenu" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="https://bulma.io">
+                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                  </a>
+              
+                  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+                </div>
+              
+                <div id="navbarBasicExample" class="navbar-menu">
+                  <div class="navbar-start">
+                    <a class="navbar-item">
+                      About
+                    </a>
+              
+                    <a class="navbar-item">
+                      Contact
+                    </a>
+              
+                    
+                      <a class="navbar-link">
+                        Projects
+                      </a>
+                      <a class="navbar-link">
+                        Resume
+                      </a>
+              
+              
+              
+                  <div class="navbar-end">
+                    <div class="navbar-item">
+                      <div class="buttons">
+                        <a class="button is-primary">
+                          <strong>Let's Talk</strong>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </nav>
+
+              <div class="column content">
+                <h1 class="title">Projects</h1>
+                <!-- 3x3 layout with flexbox -->
+                <div class="columns">
+                  <div class="column">
+                    <div class="card">
+                    <img src="images/bulma-logo.png" alt="">
+                    <div class="card-info">
+                      <p class="subtitle">Good meow-ning is a coffee establishment dedicated to providing a relaxing environment for cat enthusiasts. They want to be where cats and coffee collide.
+                      </p>
+                      <a class="button is-primary center">
+                        <span class="icon">
+                        <i class="fab fa-github"></i>
+                        </span>
+                        <span>Develop</span>
+                      </a>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                    <img src="images/bulma-logo.png" alt="">
+                    <div class="card-info">
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <a class="button is-primary center">
+                        <span class="icon">
+                        <i class="fab fa-github"></i>
+                        </span>
+                        <span>Develop</span>
+                      </a>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                    <img src="images/bulma-logo.png" alt="">
+                    <div class="card-info">
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <a class="button is-primary center">
+                        <span class="icon">
+                        <i class="fab fa-github"></i>
+                        </span>
+                        <span>Develop</span>
+                      </a>
+                    </div>
+                  </div>
+                  
+                  </div>
+                </div>
+
+                <!-- 3x3 layout with flexbox -->
+                <div class="columns">
+                  <div class="column">
+                    <div class="card">
+                    <img src="images/bulma-logo.png" alt="">
+                    <div class="card-info">
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <a class="button is-primary center">
+                        <span class="icon">
+                        <i class="fab fa-github"></i>
+                        </span>
+                        <span>Develop</span>
+                      </a>
+                    </div>
+                  </div>
+                  </div>
+                  <!-- <div class="column">
+                    <div class="card">
+                    <img src="images/bulma-logo.png" alt="">
+                    <div class="card-info">
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <a class="button is-primary center">
+                        <span class="icon">
+                        <i class="fab fa-github"></i>
+                        </span>
+                        <span>Develop</span>
+                      </a>
+                    </div>
+                  </div>
+                  </div> -->
+                  <!-- <div class="column">
+                    <div class="card">
+                    <img src="images/bulma-logo.png" alt="">
+                    <div class="card-info">
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <a class="button is-primary center">
+                        <span class="icon">
+                        <i class="fab fa-github"></i>
+                        </span>
+                        <span>Develop</span>
+                      </a>
+                    </div>
+                  </div>
+                  
+                  </div>
+                </div> -->
+                <!-- 3x3 layout with flexbox -->
+                <!-- <div class="columns">
+                  <div class="column">
+                    <div class="card">
+                    <img src="images/bulma-logo.png" alt="">
+                    <div class="card-info">
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <a class="button is-primary center">
+                        <span class="icon">
+                        <i class="fab fa-github"></i>
+                        </span>
+                        <span>Develop</span>
+                      </a>
+                    </div>
+                  </div>
+                  </div> -->
+                  <!-- <div class="column">
+                    <div class="card">
+                    <img src="images/bulma-logo.png" alt="">
+                    <div class="card-info">
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <a class="button is-primary center">
+                        <span class="icon">
+                        <i class="fab fa-github"></i>
+                        </span>
+                        <span>Develop</span>
+                      </a>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="column">
+                    <div class="card">
+                    <img src="images/bulma-logo.png" alt="">
+                    <div class="card-info">
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                      <a class="button is-primary center">
+                        <span class="icon">
+                        <i class="fab fa-github"></i>
+                        </span>
+                        <span>Develop</span>
+                      </a>
+                    </div>
+                  </div>
+                  
+                  </div>
+                </div> -->
+
+                
+                
+            </div>
+          </div>
+          <script src="docs/nav.js"></script>
+	</body>
+</html>
