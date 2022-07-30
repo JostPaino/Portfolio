@@ -21,7 +21,9 @@ body{
 }
 /*sticky*/
 
-
+.card-info > p {
+  padding:10px;
+}
 .menu{
   position: sticky;
   display: inline-block;
@@ -47,6 +49,9 @@ body{
 	justify-content: center;
 	align-items: center;
 }	
+.card-info > p {
+  padding:10px;
+}
 
 @media (max-width: 1024px) { .hero { background: white url(images/hero-2.jpg) center / cover; } }
 @media (max-width:  768px) { 
@@ -55,6 +60,7 @@ body{
 @media (min-width:  768px) { 
   .mobilemenu{ display: none;} 
   .card {width: 20vw;}
+  .mobilecontent{display: none;}
  
 }
  
@@ -68,12 +74,12 @@ body{
 		</style>
 	</head>
 	<body>
+    <!-- mobile layout -->
         <div class="is-widescreen">
             <div class="columns">
                 
               <aside class="menu">
                 <h1 class="title">LOGO</h1>
-                <h1 class="subtitle center">Ux / Ui<br> Designer</h1>
               
                 <ul class="menu-list">
                   <li><a >About</a></li>
@@ -103,11 +109,6 @@ body{
                     <a class="navbar-item">
                       About
                     </a>
-              
-                    <a class="navbar-item">
-                      Contact
-                    </a>
-              
                     
                       <a class="navbar-link is-active">
                         Projects
@@ -130,14 +131,14 @@ body{
                 </div>
               </div>
               </nav>
-
-              <div class="column content">
+<!-- mobile content -->
+              <div class="column content mobilecontent">
                 <h1 class="title">Projects</h1>
                 <!-- 3x3 layout with flexbox -->
                 <div class="columns">
                   <div class="column">
                     <div class="card">
-                    <img src="images/bulma-logo.png" alt="Company">
+                    <img src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
                     <div class="card-info">
                       <p class="subtitle">Good meow-ning is a coffee establishment dedicated to providing a relaxing environment for cat enthusiasts. They want to be where cats and coffee collide.
                       </p>
@@ -149,7 +150,7 @@ body{
                   </div>
                   <div class="column">
                     <div class="card">
-                    <img src="images/bulma-logo.png" alt="Company">
+                    <img src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
                     <div class="card-info">
                       <p class="subtitle">HelloSuccess aims to provide financial education to young adults in order to provide them with pleasant banking experiences and financial stability. 
                       </p>
@@ -161,7 +162,7 @@ body{
                   </div>
                   <div class="column">
                     <div class="card">
-                    <img src="images/bulma-logo.png" alt="Company">
+                    <img src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
                     <div class="card-info">
                       <p class="subtitle">JPealth Food is a Houston-based restaurant that caters to customers who do not have time to cook their own meals.</p>
                       <a class="button is-primary center">
@@ -177,7 +178,7 @@ body{
                 <div class="columns">
                   <div class="column">
                     <div class="card">
-                    <img src="images/bulma-logo.png" alt="Company">
+                    <img src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
                     <div class="card-info">
                       <p class="subtitle">Firefly is a rock band from Denver, Colorado. I helped Firefly shape its brand and user experience.</p>
                       <a class="button is-primary center">
@@ -189,5 +190,6 @@ body{
             </div>
           </div>
           <script src="js/nav.js"></script>
+          <!-- mobile layout -->
 	</body>
 </html>
