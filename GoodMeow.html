@@ -69,6 +69,26 @@ img{
   .size1-3{
   width:33%;
 }
+.grid-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+#container>.a {
+  grid-column: 1;
+}
+
+#container>.b {
+  grid-column: 2;
+}
+
+#container.reverse>.a {
+  grid-column: 2;
+}
+
+#container.reverse>.b {
+  grid-column: 1;
+}
 }
 
 
@@ -138,7 +158,7 @@ img{
 
       <div class="column Card-column">
         
-        <div class="swap">
+        <div class="grid-container">
         <div class="card-info">
           <h3> The Product</h3>
           <br>
@@ -157,7 +177,7 @@ img{
 
       <div class="column Card-column">
         
-        <div class="swap">
+        <div class="grid-container">
         <div class="card-info">
           <h3> The Problem:</h3>
           <br>
@@ -173,7 +193,7 @@ img{
       </div>
       <div class="column Card-column">
         
-        <div class="swap">
+        <div class="grid-container">
         <div class="card-info">
           <h3>My Role:</h3>
           <br>
@@ -221,7 +241,7 @@ img{
     
     <div class="column Card-column">
       
-      <div class="swap">
+      <div class="grid-container">
       <div class="card-info">
         <h3> Problem Statement:
         </h3>
@@ -244,7 +264,7 @@ img{
 
     <div class="column Card-column">
         
-      <div class="swap">
+      <div class="grid-container">
       <div class="card-info">
         <p>I designed a storyboard to record Vivian's user experience and imagine how the application would impact her life.
         </p>
@@ -271,7 +291,7 @@ img{
 
     <div class="column Card-column">
         
-      <div class="swap">
+      <div class="grid-container">
       <div class="card-info">
          <div class="card-img">
         <img style="width: 100%;" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
@@ -305,7 +325,7 @@ img{
     </div>
     <div class="column Card-column">
         
-      <div class="swap">
+      <div class="grid-container">
       <div class="card-info">
          <div class="card-img">
         <img style="width: 100%;" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
@@ -322,21 +342,21 @@ img{
     
     <div class="column Card-column">
       
-      <div class="swap">
-      <div class="card-info">
+      <div class="grid-container reverse" id="container">
+      <div class="card-info a">
         <h3> Digital wireframes
         </h3>
         <br>
         <p>After ideating and drafting some paper wireframes, I created the initial designs for the Good Meow-ning app. These designs centered on providing users with the ability to order quickly and effectively while seeing featured items.
       </div>
-      <div class="card-img">
+      <div class="card-img b">
         <img style="width: 100%;" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
       </div>
     </div>
     </div>
     <div class="column Card-column">
       
-      <div class="swap">
+      <div class="grid-container">
       <div class="card-info">
         <h3> Low-fidelity prototype
         </h3>
@@ -363,7 +383,7 @@ img{
     
     <div class="column Card-column">
         
-      <div class="swap" style="justify-content:space-evenly;">
+      <div class="grid-container" style="justify-content:space-evenly;">
       <div class="card-info" style="text-align: center; ">
         <h3> Study type:</h3>
         <p class="subtitle">moderated usability study
@@ -377,7 +397,7 @@ img{
     </div>
     <div class="column Card-column">
         
-      <div class="swap" style="justify-content:space-evenly;">
+      <div class="grid-container" style="justify-content:space-evenly;">
       <div class="card-info" style="text-align: center; ">
         <h3> Participants:</h3>
         <p class="subtitle">5 participants
@@ -402,7 +422,7 @@ img{
 
     
     <div class="column Card-column">
-      <div class="swap" style="justify-content:space-evenly;">
+      <div class="grid-container" style="justify-content:space-evenly;">
       <div class="card-info" style="text-align: center; ">
         <h4> Customization</h4>
         <br>
@@ -442,7 +462,7 @@ img{
 
     <div class="column Card-column">
       
-      <div class="swap">
+      <div class="grid-container ">
       <div class="card-info">
         <p> I made design improvements based on the findings of the usability research, such as making the menu scroll sideways so that users view particular items in the menu and adding a button that displays how many products are in the cart.</p>
 
@@ -455,16 +475,16 @@ img{
     </div>
     <div class="column Card-column">
       
-      <div class="swap-reserve">
+      <div class="grid-container reverse" id="container">
 
         <!-- Change order -->
       
-      <div class="card-info">
+      <div class="card-info a">
         <p>Instead of buttons, a collapsible section got added to the design. These sections would provide users with extra options when creating their orders.</p>
 
   
       </div>
-      <div class="card-img">
+      <div class="card-img b">
         <img style="width: 100%;" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
       </div>
       
@@ -483,7 +503,7 @@ img{
 
     <div class="column Card-column">
         
-      <div class="swap">
+      <div class="grid-container ">
       <div class="card-info">
          <div class="card-img">
         <img style="width: 100%;" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
@@ -508,7 +528,7 @@ img{
 
     <div class="column Card-column">
       
-      <div class="swap">
+      <div class="grid-container ">
       <div class="card-info">
         <p>The high-fidelity prototype followed the same user flow as the low-fidelity prototype, with design improvements made in response to the usability study.</p>
 
@@ -529,7 +549,7 @@ img{
       </div>
     </div>
     <div class="column Card-column">
-      <div class="swap" style="justify-content:space-evenly;">
+      <div class="grid-container " style="justify-content:space-evenly;">
       <div class="card-info" style="text-align: center; ">
         <p >The navigation menu on the home screen lets users quickly find their way throughout the application.
         </p>
@@ -562,7 +582,7 @@ img{
     </div>
 
     <div class="column Card-column">
-      <div class="swap" style="justify-content:space-evenly;">
+      <div class="grid-container " style="justify-content:space-evenly;">
      <div class="card-info">   <!--width50% -->
         <h3 style="text-align: center; ">Impact</h3><br>
         <p>Users shared that the app would help them order when they have time constraints.
@@ -593,7 +613,7 @@ img{
     </div>
 
     <div class="column Card-column">
-      <div class="swap " style="justify-content:space-evenly;">
+      <div class="grid-container  " style="justify-content:space-evenly;">
       <div class="card-info " style="text-align: center; ">
         <p>Conduct research on how confident people are after using the app.
         </p>
