@@ -1,113 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Jost's Portfolio</title>
+		<title>Ux Projects</title>
 		<link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <!-- <link rel="stylesheet" href="css/debug.css"> -->
 		<link rel="stylesheet" href="css/helpers.css">
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/style.css">
 		<style>
-
-/* Split the screen in half */
-.split {
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+body{
+  padding: 1.2em;
+}
+.card-info{
+  padding: 1.2em;
+}
+.button{
+  cursor: pointer;
+}
+.currentpage{
+  color: blue;
+}
+img{
+  width: 100%;
+}
+.card{
+  /* max-width: 500px; */
+  margin: auto;
+  flex-grow: .3;
+}
+.mlauto{
+  margin-left: auto;
+  margin-right: 0;
 }
 
-/* Control the left side */
-.left {
-  left: 0;
-  background-color: #111;
+@media (min-width: 768px) {
+	:root {
+		font-size: 90%;
+	}
+  .card{
+    flex-direction:row;display:flex;
+  }
+  .Card-column{
+    max-width: 878px;
+    margin: auto;
+  }
 }
+.center {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}	
 
-/* Control the right side */
-.right {
-  right: 0;
-  background-color: rgb(124, 107, 107);
-}
-
-/* If you want the content centered horizontally and vertically */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-/* Style the image inside the centered container, if needed */
-.centered img {
-  width: 150px;
-  border-radius: 50%;
-}
-.stopwrap {
-	white-space:nowrap;
-}
-.myname{
-	font-size: 2em;
-	font-family: 'Courier New', Courier, monospace;
-	position: absolute;
-	top: 1em;
-}
-.nameR{
-left: 0.5em;
-position: absolute;
-font-size: 2em;
-}
-.nameL{
-right: 0.5em;
-position: absolute;
-font-size: 8vw;
-}
 		</style>
 	</head>
 	<body>
+   
+ <!-- mobile layout -->
+ <div class="is-widescreen">
+  <div class="columns">
+
+   
+<!-- mobile content -->
+    <div class="column content">
+      <nav class="navbar mobilemenu" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="index.html">
+            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start mlauto">
+            <a class="navbar-item currentpage">
+              Home
+            </a>
+            
+              <a class="navbar-item" href="Projects.html">
+                Projects
+              </a>
+              <a class="navbar-item">
+                Resume
+              </a>
+      
+      
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary" href="Contact.html">
+                  <strong>Let's Talk</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </nav>
+      
+      
+Personal information
+
+<h1 class="center">Hi, I'm Joshua Paino, a</h1>
+<h2>UX designer, UI designer css animation css animate and js loop</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, natus at vero totam laboriosam quam autem fugit est, voluptas possimus omnis, exercitationem hic debitis tenetur.</p>
+<div class="center">
+  <button class="button is-warning" style="margin-right:1em;"><a href="Projects.html">See work</a></button>
+  <button class="button is-primary"style="margin-left:1em;"><a href="Contact.html">let's talk</a></button>
+</div>
+
+      
 
 
-		<div class="split left">
-			<h1 class="nameL myname">Joshua</h1>
-			<div class="centered">
-			  <h1 class="title stopwrap">Ux/Ui<br> Designer</h1>
-			  <span class="navbar-item">
-				<a class="button is-primary centered" href="UxHome.html">
-				  <span class="icon">
-					<i class="fa-brands fa-accessible-icon"></i>
-				  </span>
-				  <span>Design</span>
-				  
-				</a>
-			</span>
-			</div>
-		  </div>
-		  
-		  <div class="split right">
-			<h1 class="nameR myname">Paino</h1>
-			
-			<div class="centered">
-			  <h1 class="title stopwrap">Front-end<br> Developer</h1>
-			  <span class="navbar-item">
-				<a class="button is-primary centered">
-				  <span class="icon">
-					<i class="fab fa-github"></i>
-				  </span>
-				  <span>Develop</span>
-				</a>
-			</span>
-			</div>
-			
-		  </div>
 
 
+    </div>
+
+</div>
+ </div>
+ 
+<script src="js/nav.js"></script>
+<!-- mobile layout -->
+   
 	</body>
 </html>
