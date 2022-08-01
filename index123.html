@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Jost's Portfolio</title>
+		<link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+		<link rel="stylesheet" href="css/helpers.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgb(124, 107, 107);
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+.stopwrap {
+	white-space:nowrap;
+}
+.myname{
+	font-size: 2em;
+	font-family: 'Courier New', Courier, monospace;
+	position: absolute;
+	top: 1em;
+}
+.nameR{
+left: 0.5em;
+position: absolute;
+font-size: 2em;
+}
+.nameL{
+right: 0.5em;
+position: absolute;
+font-size: 8vw;
+}
+		</style>
+	</head>
+	<body>
+
+
+		<div class="split left">
+			<h1 class="nameL myname">Joshua</h1>
+			<div class="centered">
+			  <h1 class="title stopwrap">Ux/Ui<br> Designer</h1>
+			  <span class="navbar-item">
+				<a class="button is-primary centered" href="UxHome.html">
+				  <span class="icon">
+					<i class="fa-brands fa-accessible-icon"></i>
+				  </span>
+				  <span>Design</span>
+				  
+				</a>
+			</span>
+			</div>
+		  </div>
+		  
+		  <div class="split right">
+			<h1 class="nameR myname">Paino</h1>
+			
+			<div class="centered">
+			  <h1 class="title stopwrap">Front-end<br> Developer</h1>
+			  <span class="navbar-item">
+				<a class="button is-primary centered">
+				  <span class="icon">
+					<i class="fab fa-github"></i>
+				  </span>
+				  <span>Develop</span>
+				</a>
+			</span>
+			</div>
+			
+		  </div>
+
+
+	</body>
+</html>
