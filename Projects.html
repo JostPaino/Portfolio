@@ -12,6 +12,40 @@
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/style.css">
 		<style>
+      .button,
+.social a{
+  transform-origin: center;
+  transition-duration: 100ms;
+}
+.button:hover{
+  box-shadow: 0 1.5rem 3rem rgba(0,0,0, 0.2);
+  transform: scale(1.02) translateY(-4px);
+}
+.button:active{
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.3);
+  transform: scale(.98) translateY(-2px);
+}
+.social{
+  display: flex;
+  margin-top: 1.5rem;
+}
+.social li{
+  height: 2rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  width: 2rem;
+}
+.social a {
+  align-items: center;
+  display: flex;
+  font-size: 3rem;
+  height: 3rem;
+  opacity: 0.5;
+  transition-property: opacity,transform;
+  width: 3rem;
+  will-change: opacity, tranform;
+}
 body{
   padding: 1.2em;
 }
@@ -59,7 +93,7 @@ img{
 
    
 <!-- mobile content -->
-    <div class="column content">
+    <div class="column">
       <nav class="navbar mobilemenu" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="index.html">
@@ -185,13 +219,14 @@ img{
 
       <!-- 3x3 layout with flexbox -->
 </div>
-<footer style="background-color:grey;">
- <ul class="center "style="list-style-type:none;">
-  <li><a href="index.html">Home </a></li>
-  <li><a href="">Twitter</a></li>
-  <li><a href="https://github.com/JostPaino">Github</a></li>
-  <li><a href="contact.html">Contact</a></li>
- </ul>
+<footer >
+ <ul class="social center "style="list-style-type:none;">
+  <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+  <li><a href="https://github.com/JostPaino"><i class="fab fa-github"></i> </a></li>
+  <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+  <li><a href=""><i class="fa fa-envelope"></i></a></li>
+</ul>
 </footer>
 <script src="js/nav.js"></script>
 <!-- mobile layout -->
