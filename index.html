@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Ux Projects</title>
+		<title>Joshua Paino - Ux Designer</title>
 		<link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -12,6 +12,143 @@
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/style.css">
 		<style>
+html{
+  line-height: 1.5;
+  min-width: 300px;
+  overflow-x: hidden;
+  min-height: 100vh;
+  text-shadow: 0 3px 5px rgba(0,0,0, 0.1);
+}
+.contentb {
+  display: flex;
+  position: relative;
+  min-height: 80vh;
+}
+.side{
+  max-height: 20rem;
+  min-width: 20rem;
+}
+.about{
+  max-width: 26rem;
+}
+.picture-shadow,.picture-image{
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+}
+/* .picture{
+  padding-top: 100%;
+  position:relative;
+  width: 100%; */
+/* }
+.picture-shadow{
+  border-radius: 290486px;
+  top:10%;
+  background-image:  radial-gradient(#000, 0%, rgba(0.0.0.0) 70%);
+  position: absolute;
+}
+.picture-image{
+  border-radius: 290486px;
+  position: absolute;
+} */
+@media screen and (max-width:799px){
+  .contentb{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5 rem 3rem;
+  }
+  .side{
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+}
+.name{
+  line-height: 1.125;
+  margin-bottom: 0.5rem;
+  font-size: 2.25rem;
+}
+.job,.button{
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.job{
+  font-size: 0.75rem;
+}
+.description{
+  font-size: 1.5rem;
+}
+.hr{
+  background-color: black;
+  content: "";
+  height: 1px;
+  width: 4rem;
+  transform-origin: center left;
+  margin-top: 1.5rem;
+margin-bottom: 1.5rem;
+}
+.contact{
+  display: inline-block;
+  margin-top: 1.5rem;
+  vertical-align: top;
+}
+.button,
+.social a{
+  transform-origin: center;
+  transition-duration: 100ms;
+}
+.button:hover{
+  box-shadow: 0 1.5rem 3rem rgba(0,0,0, 0.2);
+  transform: scale(1.02) translateY(-4px);
+}
+.button:active{
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.3);
+  transform: scale(.98) translateY(-2px);
+}
+.social{
+  display: flex;
+  margin-top: 1.5rem;
+}
+.social li{
+  height: 2rem;
+  margin-right: 0.5rem;
+  text-align: center;
+  width: 2rem;
+}
+.social a {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  height: 2rem;
+  opacity: 0.5;
+  transition-property: opacity,transform;
+  width: 2rem;
+  will-change: opacity, tranform;
+}
+@media screen and (min-width:800px){
+  .contentb{
+    align-items: center;
+    justify-content:  space-around;
+    justify-content: space-evenly;
+    padding: 4em;
+  }
+  .side{
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 20rem;
+    margin-left: 4 rem;
+    order: 2;
+    width: 20rem;
+  }
+  .about{
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+
 body{
   padding: 1.2em;
 }
@@ -37,7 +174,7 @@ img{
   margin-right: 0;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 	:root {
 		font-size: 90%;
 	}
@@ -54,19 +191,21 @@ img{
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
-}	
+}	 */
+
+
 
 		</style>
 	</head>
 	<body>
    
  <!-- mobile layout -->
- <div class="is-widescreen">
+  <div class="is-widescreen">
   <div class="columns">
 
    
-<!-- mobile content -->
-    <div class="column content">
+ <!-- mobile content  -->
+    <div class="column">
       <nav class="navbar mobilemenu" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="index.html">
@@ -106,28 +245,65 @@ img{
           </div>
         </div>
       </div>
-      </nav>
-      
-      
-
-<h1 class="center">Hi, I'm Joshua Paino, a</h1>
-<h2>UX designer, UI designer css animation css animate and js loop</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, natus at vero totam laboriosam quam autem fugit est, voluptas possimus omnis, exercitationem hic debitis tenetur.I design interfaces and code websites with a human-centered design approach.</p>
-<div class="center">
-  <button class="button is-warning" style="margin-right:1em;"><a href="Projects.html">See work</a></button>
-  <button class="button is-primary"style="margin-left:1em;"><a href="Contact.html">let's talk</a></button>
-</div>
+      </nav> 
+    </div>
+  </div>
+  </div>
 
       
+      <div class="contentb">
+        <aside class="side">
+          <figure class="picture">
+            <div class="picture-shadow"></div>
+            <img id="pictureImage" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company" alt="Picture of Joshua Paino" width"320" height="320">
+          </figure>
+        </aside>
+        <main class="about">
+          <h1 class="name">
+            Hi, I'm Joshua Paino
+          </h1>
+          <p class="job">Ux Designer/ Front-end Developer</p>
+          <hr class="hr">
+          <div class="description">
+            <p>
+              I design interfaces and code websites with a human-centered design approach.
+            </p>
+          </div>
+          <div class="contact">
+            <a href="mailto:jostpaino@gmail.com" class="button btn-accent ">Get in Touch</a>
+            <a href="Projects.html" class="button is-primary ">See work</a>
+
+            
+            <ul class="social">
+              <li>
+                <a>
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+      
+          </div>
+        </main>
+      </div>
+    
 
 
-
-
+<!-- 
     </div>
 
 </div>
  </div>
- 
+  -->
 <script src="js/nav.js"></script>
 <!-- mobile layout -->
    
