@@ -22,6 +22,7 @@
   --ff-title: "Playfair Display", serif;
   --ff-body: "Assistant", sans-serif;
 }
+html { scroll-behavior: smooth; } 
 
 body {
   background: var(--background);
@@ -699,4 +700,7 @@ img{
 #container.reverse>.b {
   grid-column: 1;
 }
+}
+.git:hover {
+color:black;
 }
