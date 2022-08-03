@@ -3,9 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="Description"  content="Joshua's Portfolio">
-    <meta name="author" content="Joshua Paino">
-       <title>Joshua Paino - Ux Designer</title>
+		<title>Ux Projects</title>
 		<link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -13,300 +11,236 @@
 		<link rel="stylesheet" href="css/helpers.css">
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico"> 
 		<style>
-html{
-  line-height: 1.5;
-  min-width: 300px;
-  overflow-x: hidden;
-  min-height: 100vh;
-  text-shadow: 0 3px 5px rgba(0,0,0, 0.1);
-}
-.contentb {
-  display: flex;
-  position: relative;
-  min-height: 80vh;
-}
-.side{
-  max-height: 20rem;
-  min-width: 20rem;
-}
-.about{
-  max-width: 26rem;
-}
-.picture-shadow,.picture-image{
-  display: block;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-
-}
-/* .picture{
-  padding-top: 100%;
-  position:relative;
-  width: 100%; */
-/* }
-.picture-shadow{
-  border-radius: 290486px;
-  top:10%;
-  background-image:  radial-gradient(#000, 0%, rgba(0.0.0.0) 70%);
-  position: absolute;
-}
-.picture-image{
-  border-radius: 290486px;
-  position: absolute;
-} */
-@media screen and (max-width:799px){
-  .contentb{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5 rem 3rem;
+ @media (min-width: 768px) {
+  .OUT{
+    display:none;
   }
-  .side{
-    margin-bottom: 3rem;
-    width: 100%;
+  
+ }
+ body {
+  padding:0px;
+ }
+ @media (max-width: 799px) {
+  #pictureImage {
+    width: 300px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
   }
-}
-.name{
-  line-height: 1.125;
-  margin-bottom: 0.5rem;
-  font-size: 2.25rem;
-}
-.job,.button{
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-.job{
-  font-size: 0.75rem;
-}
-.description{
-  font-size: 1.5rem;
-}
-.hr{
-  background-color: black;
-  content: "";
-  height: 1px;
-  width: 4rem;
-  transform-origin: center left;
-  margin-top: 1.5rem;
-margin-bottom: 1.5rem;
-}
-.contact{
-  display: inline-block;
-  margin-top: 1.5rem;
-  vertical-align: top;
-}
-.button,
-.social a{
-  transform-origin: center;
-  transition-duration: 100ms;
-}
-.button:hover{
-  box-shadow: 0 1.5rem 3rem rgba(0,0,0, 0.2);
-  transform: scale(1.02) translateY(-4px);
-}
-.button:active{
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.3);
-  transform: scale(.98) translateY(-2px);
-}
-.social{
-  display: flex;
-  margin-top: 1.5rem;
-}
-.social li{
-  height: 2rem;
-  margin-right: 0.5rem;
-  text-align: center;
-  width: 2rem;
-}
-.social a {
-  align-items: center;
-  display: flex;
-  font-size: 1.5rem;
-  height: 2rem;
-  opacity: 0.5;
-  transition-property: opacity,transform;
-  width: 2rem;
-  will-change: opacity, tranform;
-}
-@media screen and (min-width:800px){
-  .contentb{
-    align-items: center;
-    justify-content:  space-around;
-    justify-content: space-evenly;
-    padding: 4em;
-  }
-  .side{
-    flex-grow: 0;
-    flex-shrink: 0;
-    height: 20rem;
-    margin-left: 4 rem;
-    order: 2;
-    width: 20rem;
-  }
-  .about{
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
-}
-
-body{
-  padding: 1.2em;
-}
-.card-info{
-  padding: 1.2em;
-}
-.button{
-  cursor: pointer;
-}
-.currentpage{
-  color: blue;
-}
-img{
-  width: 100%;
-}
-.card{
-  /* max-width: 500px; */
-  margin: auto;
-  flex-grow: .3;
-}
-.mlauto{
-  margin-left: auto;
-  margin-right: 0;
-}
-
-/* @media (min-width: 768px) {
-	:root {
-		font-size: 90%;
-	}
-  .card{
-    flex-direction:row;display:flex;
-  }
-  .Card-column{
-    max-width: 878px;
+ figure{
     margin: auto;
   }
-}
-.center {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-}	 */
-
-
-
+  }
+  
+ 
+ body {
+  padding:0px;
+ }
 		</style>
 	</head>
 	<body>
-   
- <!-- mobile layout -->
-  <div class="is-widescreen">
-  <div class="columns">
 
-   
- <!-- mobile content  -->
-    <div class="column">
-      <nav class="navbar mobilemenu" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="index.html">
-            <img src="images/My project-1 (2).png" width="112" height="28">
+    <nav class="navbar mobilemenu" role="navigation" aria-label="main navigation" style="position:sticky;top:0; padding-left: 1.2rem;padding-top: 1.2rem;padding-right: 1.2rem;">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
+          <h1>Jost.</h1>
+        </a>
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start mlauto">
+          <a class="navbar-item " href="index.html">
+            Home
           </a>
-      
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start mlauto">
-            <a class="navbar-item currentpage">
-              Home
+          
+            <a class="navbar-item currentpage" href="#projects">
+              Projects
             </a>
-            
-              <a class="navbar-item" href="Projects.html">
-                Projects
+            <ul class="menu-list OUT" style="margin-left: 1rem;">
+              <li><a href="" class="">Good Meowning</a></li>
+              <li><a href="" class="">HelloSuccess</a></li>
+              <li><a href="" class="">FireFly</a></li>
+              <li><a href="" class="">JPhealth</a></li>
+            </ul>
+    
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button btn-accent" href="Contact.html"> 
+                <strong>Let's Talk</strong>
               </a>
-              <a class="navbar-item">
-                Resume
-              </a>
-      
-      
-      
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary" href="Contact.html">
-                  <strong>Let's Talk</strong>
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      </nav> 
     </div>
-  </div>
-  </div>
-
-      
-      <div class="contentb">
-        <aside class="side">
-          <figure class="picture">
-            <div class="picture-shadow"></div>
-            <img id="pictureImage" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company" alt="Picture of Joshua Paino" width"320" height="320">
-          </figure>
-        </aside>
-        <main class="about">
-          <h1 class="name">
-            Hi, I'm Joshua Paino
-          </h1>
-          <p class="job">Ux Designer/ Front-end Developer</p>
-          <hr class="hr">
-          <div class="description">
-            <p>
-              I design interfaces and code websites with a human-centered design approach.
-            </p>
-          </div>
-          <div class="contact">
-            <a href="mailto:jostpaino@gmail.com" class="button btn-accent ">Get in Touch</a>
-            <a href="Projects.html" class="button is-primary ">See work</a>
-
-            
-            <ul class="social" style="list-style-type: none;">
-              <li>
-                <a>
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-      
-          </div>
-        </main>
-      </div>
+    </nav>
     
+   
+ <!-- mobile layout -->
+ <div class="is-widescreen" style="padding: 1.2em;">
+  <div class="columns">
 
+   
+<!-- mobile content -->
+    <div class="column">
+     
+      <!-- 3x3 layout with flexbox -->
+     
+<div class="columns">
+  <div class="column Card-column">
 
-<!-- 
+    
+    <div class="contentb">
+      <aside class="side">
+        <figure class="picture">
+          <div class="picture-shadow"></div>
+          <img id="pictureImage" src="https://media.istockphoto.com/photos/young-adult-dark-skinned-man-cute-iconic-character-guy-3d-rendering-picture-id1389898350?b=1&k=20&m=1389898350&s=170667a&w=0&h=QbMLEf0OzL2O8JbhyJCBxlwq4BGLyKlJkyVMetWLU38=" alt="Company" alt="Picture of Joshua Paino" style="border-radius: 50%;">
+        </figure>
+      </aside>
+      <main class="about">
+        <h1 class="name">
+          Hi, I'm Joshua Paino
+        </h1>
+        <p class="job">Ux Designer/ Front-end Developer</p>
+        <hr class="hr">
+        <div class="description">
+          <p>
+            I design interfaces and code websites with a human-centered design approach.
+          </p>
+        </div>
+        <div class="contact">
+          <a href="mailto:jostpaino@gmail.com" class="button btn-accent ">Get in Touch</a>
+          <a href="Projects.html" class="button btn-secondary " style="margin-left:10px;">See Blog</a>
+
+          
+          <ul class="social" style="list-style-type: none;">
+            <li>
+              <a>
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a>
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a class="git">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+    
+        </div>
+        
+      </main>
+      
     </div>
+  <div id="projects">
+    
+      <h1 class="title" id="Projects" style="text-align:center;">Projects</h1>
+      <br>
+  </div>
 
+    <div class="card">
+      <div class="card-img">
+    <img style="width: 100;" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
+  </div>
+    <div class="card-info">
+      <p class="subtitle">Good meow-ning is a coffee establishment dedicated to providing a relaxing environment for cat enthusiasts. They want to be where cats and coffee collide.
+      </p>
+      <a class="button btn-secondary  center card-button" href="GoodMeow.html">
+        <span>Learn More</span>
+      </a>
+    </div>
+  </div>
+  </div>
+  
+
+
+
+    </div>
+    
+<div class="columns">
+  <div class="column Card-column">
+    <div class="card">
+      <div class="card-img">
+    <img style="width: 100;" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
+  </div>
+    <div class="card-info">
+      <p class="subtitle">HelloSuccess aims to provide financial education to young adults in order to provide them with pleasant banking experiences and financial stability.
+      </p>
+      <a class="button btn-secondary center card-button" href="HelloSuccess.html">
+        <span>Learn More</span>
+      </a>
+    </div>
+  </div>
+  </div>
+  
+
+
+
+    </div>
+    
+<div class="columns">
+  <div class="column Card-column">
+    <div class="card">
+      <div class="card-img">
+    <img style="width: 100;" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
+  </div>
+    <div class="card-info">
+      <p class="subtitle">JPealth Food is a Houston-based restaurant that caters to customers who do not have time to cook their own meals.
+      </p>
+      <a class="button btn-secondary  center card-button" href="JPhealth.html">
+        <span>Learn More</span>
+      </a>
+    </div>
+  </div>
+  </div>
+  
+
+
+
+    </div>
+    
+<div class="columns">
+  <div class="column Card-column">
+    <div class="card">
+      <div class="card-img">
+    <img style="width: 100;" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
+  </div>
+    <div class="card-info">
+      <p class="subtitle">Firefly is a rock band from Denver, Colorado. I helped Firefly shape its brand and user experience.
+      </p>
+      <a class="button btn-secondary  center card-button" href="FireFly.html">
+        <span>Learn More</span>
+      </a>
+    </div>
+  </div>
+  </div>
+  
+
+      <!-- 3x3 layout with flexbox -->
 </div>
- </div>
-  -->
+<footer >
+ <ul class="social center "style="list-style-type:none;">
+  <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+  <li><a href=""><i class="fab fa-twitter"></i></a></li>
+  <li><a href="https://github.com/JostPaino"><i class="fab fa-github"></i> </a></li>
+  <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+  <li><a href=""><i class="fa fa-envelope"></i></a></li>
+</ul>
+</footer>
 <script src="js/nav.js"></script>
 <!-- mobile layout -->
    
