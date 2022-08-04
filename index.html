@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Ux Projects</title>
-		<link rel="stylesheet" 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jost Portfolio</title>
+    <link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
         <!-- <link rel="stylesheet" href="css/debug.css"> -->
 		<link rel="stylesheet" href="css/helpers.css">
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/style.css">
-		<style>
- @media (min-width: 768px) {
+	
+    <style>
+@media (min-width: 768px) {
   .OUT{
     display:none;
   }
@@ -31,218 +33,212 @@
  figure{
     margin: auto;
   }
+  .center{
+    display: in-line block;
+  }
   }
   
  
  body {
   padding:0px;
  }
-		</style>
-	</head>
-	<body>
-
-    <nav class="navbar mobilemenu" role="navigation" aria-label="main navigation" style="position:sticky;top:0; padding-left: 1.2rem;padding-top: 1.2rem;padding-right: 1.2rem;">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-          <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
-          <h1>Jost.</h1>
-        </a>
-    
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-    
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start mlauto">
-          <a class="navbar-item " href="#name">
-            Home
-          </a>
+    </style>   
+</head>
+<body>
+        <div id="name"></div>
+        <nav class="navbar mobilemenu" role="navigation" aria-label="main navigation" style="position:sticky;top:0; padding-left: 1.2rem;padding-top: 1.2rem;padding-right: 1.2rem;">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="index.html">
+                <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
+                <h1>Jost.</h1>
+              </a>
           
-            <a class="navbar-item currentpage" href="#projects">
-              Projects
-            </a>
-            <ul class="menu-list OUT" style="margin-left: 1rem;">
-              <li><a href="" class="">Good Meowning</a></li>
-              <li><a href="" class="">HelloSuccess</a></li>
-              <li><a href="" class="">FireFly</a></li>
-              <li><a href="" class="">JPhealth</a></li>
-            </ul>
-    
-    
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button btn-accent" href="Contact.html"> 
-                <strong>Let's Talk</strong>
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
               </a>
             </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start mlauto">
+                <a class="navbar-item  currentpage" href="#name">
+                  Home
+                </a>
+                <!--  -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-item" href="#projects">
+                    Projects
+                  </a>
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item" href="GoodMeow.html">
+                      Good Meowning
+                    </a>
+                    <a class="navbar-item" href="HelloSuccess.html">
+                      HelloSuccess
+                    </a>
+                    <a class="navbar-item" href="FireFly.html">
+                      FireFly
+                    </a>
+                    <a class="navbar-item" href="JPhealth.html">
+                      JPhealth
+                    </a>
+                  </div>
+                </div>
+                
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button btn-accent" href="Contact.html"> 
+                      <strong>Let's Talk</strong>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </nav>
+   
+    <article>
+        
+    <section>
+        <div class="contentb">
+            <aside class="side">
+              <figure class="picture">
+                <div class="picture-shadow"></div>
+                <img id="pictureImage" src="https://media.istockphoto.com/photos/young-adult-dark-skinned-man-cute-iconic-character-guy-3d-rendering-picture-id1389898350?b=1&k=20&m=1389898350&s=170667a&w=0&h=QbMLEf0OzL2O8JbhyJCBxlwq4BGLyKlJkyVMetWLU38=" alt="Company" alt="Picture of Joshua Paino" style="border-radius: 50%;">
+              </figure>
+            </aside>
+            <main class="about">
+              <h1 class="name" >
+                Hi, I'm Joshua Paino
+              </h1>
+              <p class="job">Ux Designer | Front-end Developer</p>
+              <hr class="hr">
+              <div class="description">
+                <p >
+                  I design interfaces and code websites with a human-centered design approach.
+                </p>
+              </div>
+              <div class="contact">
+                <a href="mailto:jostpaino@gmail.com" class="button btn-accent ">Get in Touch</a>
+                <a href="Projects.html"  class="button btn-secondary " style="margin-left:10px;">See Blog</a>
+        
+                <ul class="social" style="list-style-type: none; margin-bottom: .6rem;">
+                  <li>
+                    <a>
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <i id="projects"class="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="git">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul >
+              </div >
+            </main>
+          </div>
+    </section>
+    <section id="projects" class="PaddingInside">
+        <br>
+        <h1 class="title"style="text-align:center;">Projects</h1>
+        <br>
+        
+        
+   
+    <div class="columns">
+        <div class="column Card-column">
+          <div class="card">
+           
+          <img style="width: 404px" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
+        
+          <div class="card-info">
+           
+            <p class="subtitle">Good meow-ning is a coffee establishment dedicated to providing a relaxing environment for cat enthusiasts. They want to be where cats and coffee collide.
+            </p>
+            <a class="button btn-secondary  center card-button" href="GoodMeow.html">
+              <span>Learn More</span>
+            </a>
           </div>
         </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column Card-column">
+          <div class="card">
+           
+          <img style="width: 404px" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
+        
+          <div class="card-info">
+           
+            <p class="subtitle">HelloSuccess aims to provide financial education to young adults in order to provide them with pleasant banking experiences and financial stability.
+            </p>
+            <a class="button btn-secondary  center card-button" href="HelloSuccess.html">
+              <span>Learn More</span>
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+  
+      <div class="columns">
+        <div class="column Card-column">
+          <div class="card">
+           
+          <img style="width: 404px" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
+        
+          <div class="card-info">
+            <p class="subtitle">JPealth Food is a Houston-based restaurant that caters to customers who do not have time to cook their own meals.
+            </p>
+            <a class="button btn-secondary  center card-button" href="JPhealth.html">
+              <span>Learn More</span>
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+  
+  <div class="columns">
+    <div class="column Card-column">
+      <div class="card">
+       
+      <img style="width: 404px;" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
+    
+      <div class="card-info">
+        <p class="subtitle">Firefly is a rock band from Denver, Colorado. I helped Firefly shape its brand and user experience.
+        </p>
+        <a class="button btn-secondary  center card-button" href="FireFly.html">
+          <span>Learn More</span>
+        </a>
       </div>
     </div>
-    </nav>
-    
-   
- <!-- mobile layout -->
- <div class="is-widescreen" style="padding: 1.2em;">
-  <div class="columns">
-
-   
-<!-- mobile content -->
-    <div class="column">
-     
-      <!-- 3x3 layout with flexbox -->
-     
-<div class="columns">
-  <div class="column Card-column">
-
-    
-    <div class="contentb" id="name">
-      <aside class="side">
-        <figure class="picture">
-          <div class="picture-shadow"></div>
-          <img id="pictureImage" src="https://media.istockphoto.com/photos/young-adult-dark-skinned-man-cute-iconic-character-guy-3d-rendering-picture-id1389898350?b=1&k=20&m=1389898350&s=170667a&w=0&h=QbMLEf0OzL2O8JbhyJCBxlwq4BGLyKlJkyVMetWLU38=" alt="Company" alt="Picture of Joshua Paino" style="border-radius: 50%;">
-        </figure>
-      </aside>
-      <main class="about">
-        <h1 class="name" >
-          Hi, I'm Joshua Paino
-        </h1>
-        <p class="job">Ux Designer/ Front-end Developer</p>
-        <hr class="hr">
-        <div class="description">
-          <p >
-            I design interfaces and code websites with a human-centered design approach.
-          </p>
-        </div>
-        <div class="contact">
-          <a href="mailto:jostpaino@gmail.com" class="button btn-accent ">Get in Touch</a>
-          <a href="Projects.html"  class="button btn-secondary " style="margin-left:10px;">See Blog</a>
-
-          
-          <ul class="social" style="list-style-type: none;">
-            <li>
-              <a>
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a>
-                <i id="projects"class="fab fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a class="git">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-          </ul >
-    
-        </div >
-        
-      </main>
-      
-    </div>
-  <div id="projects">
-    
-      <h1 class="title"style="text-align:center;">Projects</h1>
-      <br>
-  </div>
-
-    <div class="card">
-      <div class="card-img">
-    <img style="width: 100;" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
-  </div>
-    <div class="card-info">
-      <p class="subtitle">Good meow-ning is a coffee establishment dedicated to providing a relaxing environment for cat enthusiasts. They want to be where cats and coffee collide.
-      </p>
-      <a class="button btn-secondary  center card-button" href="GoodMeow.html">
-        <span>Learn More</span>
-      </a>
     </div>
   </div>
-  </div>
+  
   
 
 
+    </section>
 
-    </div>
+    </article>
+    <footer>
+        <ul class="social center "style="list-style-type:none;">
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/JostPaino"><i class="fab fa-github"></i> </a></li>
+            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fa fa-envelope"></i></a></li>
+          </ul>
+          <br>
+    </footer>
     
-<div class="columns">
-  <div class="column Card-column">
-    <div class="card">
-      <div class="card-img">
-    <img style="width: 100;" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
-  </div>
-    <div class="card-info">
-      <p class="subtitle">HelloSuccess aims to provide financial education to young adults in order to provide them with pleasant banking experiences and financial stability.
-      </p>
-      <a class="button btn-secondary center card-button" href="HelloSuccess.html">
-        <span>Learn More</span>
-      </a>
-    </div>
-  </div>
-  </div>
-  
-
-
-
-    </div>
-    
-<div class="columns">
-  <div class="column Card-column">
-    <div class="card">
-      <div class="card-img">
-    <img style="width: 100;" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
-  </div>
-    <div class="card-info">
-      <p class="subtitle">JPealth Food is a Houston-based restaurant that caters to customers who do not have time to cook their own meals.
-      </p>
-      <a class="button btn-secondary  center card-button" href="JPhealth.html">
-        <span>Learn More</span>
-      </a>
-    </div>
-  </div>
-  </div>
-  
-
-
-
-    </div>
-    
-<div class="columns">
-  <div class="column Card-column">
-    <div class="card">
-      <div class="card-img">
-    <img style="width: 100;" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
-  </div>
-    <div class="card-info">
-      <p class="subtitle">Firefly is a rock band from Denver, Colorado. I helped Firefly shape its brand and user experience.
-      </p>
-      <a class="button btn-secondary  center card-button" href="FireFly.html">
-        <span>Learn More</span>
-      </a>
-    </div>
-  </div>
-  </div>
-  
-
-      <!-- 3x3 layout with flexbox -->
-</div>
-<footer >
- <ul class="social center "style="list-style-type:none;">
-  <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-  <li><a href=""><i class="fab fa-twitter"></i></a></li>
-  <li><a href="https://github.com/JostPaino"><i class="fab fa-github"></i> </a></li>
-  <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-  <li><a href=""><i class="fa fa-envelope"></i></a></li>
-</ul>
-</footer>
-<script src="js/nav.js"></script>
-<!-- mobile layout -->
-   
-	</body>
+    <script src="js/nav.js"></script>
+</body>
 </html>
