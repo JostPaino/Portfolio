@@ -10,11 +10,11 @@
   padding:0;
 }
 :root {
-  --clr-light: #fdfdfb;
-  --clr-dark: #000000;
+  --clr-light: #FFFDF8;
+  --clr-dark: #135658;
   --clr-primary: #dbffa2;
   --clr-secondary: #c3fcf2;
-  --clr-accent: #ff7750;
+  --clr-accent: #039149;
 
   --foreground: var(--clr-dark);
   --background: var(--clr-light);
@@ -23,7 +23,9 @@
   --ff-body: "Assistant", sans-serif;
 }
 html { scroll-behavior: smooth; } 
-
+.navbar-item {
+  color:var(--clr-dark)
+}
 body {
   background: var(--background);
   color: var(--foreground);
@@ -94,7 +96,7 @@ small, .text_small {font-size: 0.833rem;}
 
 .btn-accent {
   background: var(--clr-accent);
-  color: var(--foreground);
+  color: var(--background);
 }
 
 .btn::after {
@@ -129,7 +131,7 @@ html{
   min-width: 300px;
   overflow-x: hidden;
   min-height: 100vh;
-  text-shadow: 0 3px 5px rgba(0,0,0, 0.1);
+  /* text-shadow: 0 3px 5px rgba(0,0,0, 0.1); */
 }
 .contentb {
   display: flex;
@@ -634,7 +636,7 @@ img{
   cursor: pointer;
 }
 .currentpage{
-  color: blue;
+  color: #1F4564;
 }
 .accentcolor {
   color:blueviolet
@@ -702,6 +704,21 @@ img{
   grid-column: 1;
 }
 }
-.git:hover {
-color:black;
+.card{
+  background-color: #E5F1EA;
+}
+.subtitle{
+  color: var(--clr-dark);
+}
+.Github:hover{
+  color:#000000;
+  opacity: 1;
+}
+.Linkedin:hover{
+  color:#0077B5;
+  opacity: 1;
+}
+.Twitter:hover{
+  color:#1DA1F2;
+  opacity: 1;
 }
