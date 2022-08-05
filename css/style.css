@@ -722,3 +722,31 @@ img{
   color:#1DA1F2;
   opacity: 1;
 }
+body {
+  padding:0px;
+ }
+ .socialb{
+  display: flex;
+  margin-top: 1.5rem;
+}
+.socialb li{
+  height: 2rem;
+  margin-right: 3rem;
+  text-align: center;
+  width: 2rem;
+}
+.socialb a {
+  align-items: center;
+  display: flex;
+  font-size: 3rem;
+  height: 2rem;
+  opacity: 0.5;
+  transition-property: opacity,transform;
+  width: 2rem;
+  will-change: opacity, tranform;
+}
+.contentC {
+  display: flex;
+  position: relative;
+  min-height: 80vh;
+}
