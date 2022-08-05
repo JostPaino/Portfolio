@@ -750,3 +750,16 @@ body {
   position: relative;
   min-height: 80vh;
 }
+
+
+
+/* Track */
+
+
+/* Handle */
+.currentpage {
+  color: #692900;
+}
+strong {
+  color: var(--clr-accent);
+}
