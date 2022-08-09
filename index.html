@@ -9,12 +9,27 @@
     <link rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
 		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-        <link rel="stylesheet" href="css/debug.css">
+        <!-- <link rel="stylesheet" href="css/debug.css"> -->
 		<link rel="stylesheet" href="css/helpers.css">
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/style.css">
 	
     <style>
+      html::after
+        {
+    background: url('images/noise.jpg');
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.05;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 201;
+}
+
+      
 @media (min-width: 768px) {
   .OUT{
     display:none;
@@ -128,26 +143,26 @@
                 </p>
               </div>
               <div class="contact">
-                <a href="mailto:jostpaino@gmail.com" class="button btn-accent ">Get in Touch</a>
+                <a href="Contact.html" class="button btn-accent ">Get in Touch</a>
                 <a href="Projects.html"  class="button btn-secondary " style="margin-left:10px; display: none;">See Blog</a>
         
                 <ul class="social" style="list-style-type: none; margin-bottom: .6rem;">
-                  <!-- <li>
-                    <a class="Twitter">
+                  <li>
+                    <a class="Twitter" href="https://twitter.com/jostpaino" target="_blank">
                       <i class="fab fa-twitter"></i>
                     </a>
-                  </li> -->
+                  </li>
                   <li>
-                    <a class="Github">
+                    <a class="Github" href="https://github.com/JostPaino" target="_blank">
                       <i id="projects"class="fab fa-github"></i>
                     </a>
                   </li>
-                  <!-- <li>
-                    <a class="Linkedin">
+                  <li>
+                    <a class="Linkedin" href="https://www.linkedin.com/in/joshua-paino-878592125/" target="_blank">
                       <i class="fab fa-linkedin"></i>
                     </a>
-                  </li> -->
-                  <li><a href=""><i class="fa fa-envelope"></i></a></li>
+                  </li>
+                  <li><a href="mailto:jostpaino@gmail.com"><i class="fa fa-envelope"></i></a></li>
                 </ul >
               </div >
             </main>
@@ -164,11 +179,11 @@
         <div class="column Card-column">
           <div class="card">
            
-          <img class="resized"  src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
+          <img class="resized"  src="images/Gmeow.png" alt="Company">
         
           <div class="card-info">
            
-            <p class="subtitle">Good meow-ning is a coffee establishment dedicated to providing a relaxing environment for cat enthusiasts. They want to be where cats and coffee collide.
+            <p class="subtitle">Good Meow-ning is a coffee establishment dedicated to providing a relaxing environment for cat enthusiasts. They want to be where cats and coffee collide.
             </p>
             <a class="button btn-secondary  center card-button" href="GoodMeow.html">
               <span>Learn More</span>
@@ -182,7 +197,7 @@
         <div class="column Card-column">
           <div class="card">
            
-          <img class="resized" src="https://lh6.googleusercontent.com/eNzF0tbIdOGCJMWJvrv1eq6h2xBl-2_rD5-03BQasi9_X9twiAmSfit4h8tQ5r03kA3g3heZ02m0phD4ID4v-ZU" alt="Company">
+          <img class="resized" src="images/HelloSuccess.png" alt="Company">
         
           <div class="card-info">
            
@@ -200,7 +215,7 @@
         <div class="column Card-column">
           <div class="card">
            
-          <img class="resized" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
+          <img class="resized" src="images/JPealth.png" alt="Company">
         
           <div class="card-info">
             <p class="subtitle">JPealth Food is a Houston-based restaurant that caters to customers who do not have time to cook their own meals.
@@ -217,7 +232,7 @@
     <div class="column Card-column">
       <div class="card">
        
-      <img class="resized" src="https://lh6.googleusercontent.com/fw7_OhxWHZXeqWJdWDuBqf40llmrQuSfZBY065WciHNRygjut5DWFmoJfVbd0JJGyfLStIoOhTaQZna8zwicHUMNnjrYrFRCkgQLqiHutw" alt="Company">
+      <img class="resized" src="images/FireFly.png" alt="FireFly Case-Study">
     
       <div class="card-info">
         <p class="subtitle">Firefly is a rock band from Denver, Colorado. I helped Firefly shape its brand and user experience.
@@ -238,14 +253,14 @@
     </article>
     <footer>
         <ul class="social center "style="list-style-type:none;">
-            <!-- <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter"></i></a></li> -->
-            <li><a href="https://github.com/JostPaino"><i class="fab fa-github"></i> </a></li>
-            <!-- <li><a href=""><i class="fab fa-linkedin"></i></a></li> -->
-            <li><a href=""><i class="fa fa-envelope"></i></a></li>
+            <!-- <li><a href="index.html"><i class="fas fa-home"></i></a></li> -->
+            <li><a href="https://twitter.com/jostpaino" target="_blank"><i class="fab fa-twitter"></i></a></li> 
+            <li><a href="https://github.com/JostPaino" target="_blank"><i class="fab fa-github"></i> </a></li>
+            <li><a href="https://www.linkedin.com/in/joshua-paino-878592125/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="mailto:jostpaino@gmail.com"><i class="fa fa-envelope"></i></a></li>
           </ul>
           <br>
-    </footer>
+    </footer> 
     
     <script src="js/nav.js"></script>
 </body>
